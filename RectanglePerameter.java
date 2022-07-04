@@ -6,7 +6,7 @@ public class RectanglePerameter {
 		width=w;
 		}
 	void calculateArea(){
-		System.out.println(2*(length*width));}
+		System.out.println(2*(length+width));}
 	}
 class Rectangle1{
 public static void main (String args[]){
