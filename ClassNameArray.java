@@ -1,5 +1,7 @@
 package Array;
-
+/*
+@author: Arnab Kumar Hoodati
+*/
 public class ClassNameArray {
 	public static void main(String args[]){  
 		 
