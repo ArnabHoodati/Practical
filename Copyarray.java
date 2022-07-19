@@ -1,4 +1,7 @@
 package Array;
+/*
+@author: Arnab Kumar Hoodati
+*/
 
 public class Copyarray {
     public static void main(String[] args) {    
