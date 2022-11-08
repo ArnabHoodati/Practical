@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- <bean id="cour" class="com.anudipspring.entity.Course"> <property name="cname" 
+		value="Java"></property> <property name="cduration" value="500"></property> 
+		<property name="trainer" value="Amitava Sir"></property> </bean> <bean id="stud" 
+		class="com.anudipspring.entity.Student"> <property name="sid" value="101"></property> 
+		<property name="sname" value="Arnab"></property> <property name="semail" 
+		value="arnab@gmail.com"></property> <property name="sfees" value="1000"></property> 
+		<property name=""></property> -->
+
+	<bean id="cour" class="com.anudipspring.entity.Course">
+		<constructor-arg name="cname" value="Java"></constructor-arg>
+		<constructor-arg name="cduration" value="500"></constructor-arg>
+		<constructor-arg name="trainer" value="Amitava Sir"></constructor-arg>
+	</bean>
+
+	<bean id="stud" class="com.anudipspring.entity.Student">
+		<constructor-arg name="sid" value="101"></constructor-arg>
+		<constructor-arg name="sname" value="Arnab"></constructor-arg>
+		<constructor-arg name="semail" value="arnab@gmail.com"></constructor-arg>
+		<constructor-arg name="sfees" value="1000"></constructor-arg>
+		<constructor-arg>
+			<ref bean="cour"></ref>
+		</constructor-arg>
+	</bean>
+
+	<bean id="stud1" class="com.anudipspring.entity.Student">
+		<constructor-arg name="sid" value="111"></constructor-arg>
+		<constructor-arg name="sname" value="Ram"></constructor-arg>
+		<constructor-arg name="semail" value="ram@gmail.com"></constructor-arg>
+		<constructor-arg name="sfees" value="1100"></constructor-arg>
+		<constructor-arg>
+			<ref bean="cour"></ref>
+		</constructor-arg>
+	</bean>
+</beans>
